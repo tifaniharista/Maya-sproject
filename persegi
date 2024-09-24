@@ -1,0 +1,29 @@
+import turtle
+
+class Persegi: 
+    def __init__ (self, sisi, warnaisi, warnagaris):
+        self.sisi = sisi
+        self.warnaisi = warnaisi 
+        self.warnagaris = warnagaris
+        self.pen = turtle.Turtle()
+
+    def gambar(self):
+        self.pen.fillcolor(self.warnaisi)
+        self.pen.pencolor(self.warnagaris)
+        self.pen.speed(0.75)
+        self.pen.pensize(4)
+
+        for _ in range(4):
+            self.pen.forward(self.sisi)
+            self.pen.right(90)
+
+
+persegi = Persegi(350, "Pink", "Green")
+
+persegi.pen.penup()
+persegi.pen.goto(-150, 150)
+persegi.pen.pendown()
+
+persegi.gambar()
+
+turtle.done()
