@@ -1,0 +1,25 @@
+print('------------------------------------------------------')
+print("Data Diri Saya:")
+print('------------------------------------------------------\n')
+
+class DataDiri:
+    def __init__(self, nama="", kelas="", NIM=0, jurusan="", fakultas="", kampus=""):
+        self.nama = nama
+        self.kelas = kelas
+        self.NIM = NIM
+        self.jurusan = jurusan
+        self.fakultas = fakultas
+        self.kampus = kampus 
+
+    def tampil_data(self):
+        print("Nama:", self.nama)
+        print("Kelas:", self.kelas)
+        print("NIM:", self.NIM)
+        print('Jurusan:', self.jurusan)
+        print('Fakultas:', self.fakultas)
+        print('Kampus:', self.kampus) 
+
+data_diri = DataDiri('TIFANI HARISTA MAYA', "2023D", 23091397119, 'Manajemen Informatika'
+                     , 'Vokasi', "Universitas Negeri Surabaya")
+
+data_diri.tampil_data()
